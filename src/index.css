@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 5rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(207, 15, 255) 0%,
+    rgb(129, 79, 192) 100%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.8rem 2rem;
+  border: none;
+  color: white;
+  background-color: rgb(56, 44, 40);
+  margin: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: larger;
+}
+h1,
+h2 {
+  margin: 2rem auto;
+}
+
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.circle {
+  background-color: rgb(28, 235, 56);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(101, 47, 47);
+  filter: saturate(30%);
+}
+
+.circle.active {
+  background-color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(134, 9, 136, 0.8);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.gameover_box {
+  background: rgb(214, 228, 173);
+  color: rgb(9, 9, 9);
+  padding: 1rem;
+  width: 40%;
+  min-height: 35%;
+  border-radius: 5px;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.gameover_box button {
+  background: rgb(227, 140, 82);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
